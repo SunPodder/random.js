@@ -46,7 +46,7 @@ function RandomColor(red, green, blue, alpha){
   }else{
     b = Random(255, true)
   }
-  a = alpha ? random(1) : 1
+  a = alpha ? Random(alpha) : 1
   
   return `rgba(${r}, ${g}, ${b}, ${a})`
 }
