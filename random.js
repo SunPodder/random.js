@@ -3,7 +3,7 @@ function Random(min, max, full){
     max = min
     min = undefined
   }
-  if(arguments.length == 2 && arguments[1] === true){
+  if(arguments.length == 2 && typeof(arguments[1]) == "boolean"){
     full = max
     max = min
     min = undefined
@@ -46,7 +46,23 @@ function RandomColor(red, green, blue, alpha){
   }else{
     b = Random(255, true)
   }
-  a = alpha ? Random(alpha) : 1
+  if(alpha){
+    if(typeof(alpha) == "number"){
+      a = Random(alpha)
+    }else if (typeof(alpha) == "object"){
+      a = Random(alpha[0], alpha[1])
+    }
+  }else {
+    a = 1
+  }
   
   return `rgba(${r}, ${g}, ${b}, ${a})`
+}
+
+function Randomize(array){
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array
 }
