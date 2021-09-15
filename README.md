@@ -26,6 +26,12 @@ Random(50, true)
 //Random Number between 0 to 50 without decimals
 ```
 
+Get a Random Number in a specified range without decimals
+```
+Random(20, 50, true)
+//Random Number between 20 to 50 without decimals
+```
+
 ## Get Random Color
 Get Random RGBA Color<br>
 ```
