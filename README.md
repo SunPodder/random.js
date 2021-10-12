@@ -1,6 +1,16 @@
 # random-js
 Javascript Library for getting Random Values (Numbers, Colors)
 
+### Add CDN:
+```
+<script src="https://cdn.sunpodder.repl.co/random.js" ></script>
+```
+Or
+### Install from NPM:
+```
+npm install --save @sunpodder/random
+```
+
 ## Get Random Number
 Get Random number between 0 to 1<br>
 ```
