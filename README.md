@@ -3,7 +3,7 @@ Javascript Library for getting Random Values (Numbers, Colors)
 
 ### Add CDN:
 ```
-<script src="https://unpkg.com/@sunpodder/random@1.0.0/random.js" ></script>
+<script src="https://unpkg.com/@sunpodder/random@1.0.3/random.js" ></script>
 ```
 Or
 ### Install from NPM:
